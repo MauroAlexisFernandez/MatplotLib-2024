@@ -1,0 +1,58 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+x = np.linspace(-5,5,10)
+y = x**2
+
+print(x)
+print(y)
+
+plt.plot(x, y , "r")
+plt.plot(x, y+2 , "tab:green")
+plt.plot(x, y+4 , "darkviolet")
+plt.plot(x, y+7 , "#f099e7")
+plt.show()
+
+plt.plot(x, y , "r8")
+plt.plot(x, y+2 , "tab:green", marker=".")
+plt.plot(x, y+4 , "darkviolet" , marker="p")
+plt.plot(x, y+7 , "#f099e7" , marker="s")
+plt.show()
+
+plt.plot(x, y , "r8:")
+plt.plot(x, y+2 , "tab:green", marker="." , linestyle="--")
+plt.plot(x, y+4 , "darkviolet" , marker="p" , linestyle="-.")
+plt.plot(x, y+7 , "#f099e7" , marker="s")
+plt.show()
+
+plt.hist(y, color="orange")
+plt.show()
+
+plt.scatter(x,y,marker="8",c="hotpink")
+plt.show()
+
+#BOX
+
+plt.boxplot(x)
+plt.show()
+
+plt.pie(y)
+plt.show()
+
+l =("ananá","kiwi","naranja","melón","guayaba")
+s =[254,654,584,423,254]
+c = ["gold", "yellowgreen","lightcoral","teal","green"]
+e =  (0,0,0.2,0,0)
+
+plt.pie( s , labels=l , colors=c , explode=e)
+plt.show()
+
+l =("ananá","kiwi","naranja","melón","guayaba")
+s =[254,654,584,423,254]
+c = ["gold", "yellowgreen","lightcoral","teal","green"]
+e =  (0,0,0.2,0,0)
+
+plt.pie( s , labels=l , colors=c , explode=e , autopct="%1.1f%%")
+plt.show()
+
