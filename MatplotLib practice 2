@@ -1,0 +1,21 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+arts = ['PANTALÓN', 'REMERA', 'BLUSA', 'CAMISA', 'POLLERA', 'ABRIGO']
+stock = [1524, 2684, 800, 1756, 1008, 3521]
+
+
+plt.bar( arts , stock)
+plt.show()
+
+plt.bar( arts , stock , color=['turquoise', 'plum', 'teal', 'hotpink', 'aqua', 'pink'])
+plt.show()
+
+plt.bar( arts , stock , color=['turquoise', 'plum', 'teal', 'hotpink', 'aqua', 'pink'] , width=0.5)
+plt.xticks(rotation=90)
+plt.show()
+
+plt.barh( arts , stock , color=['turquoise', 'plum', 'teal', 'hotpink', 'aqua', 'pink'])
+plt.show()
+
